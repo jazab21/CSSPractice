@@ -1,0 +1,39 @@
+<!-- 
+    Metodología BEM
+
+    Block:  es cualquier elemento autónomo y aislado del documento (menú, galería, formulario, etc.)
+    Element: es cada uno de los elementos del bloque (link, foto, campo de texto, etc.)
+    Modifier: cuando un bloque se repite pero con modificación (color del texto, tamaño de fuente, etc.)
+
+    Escritura:
+        · Los bloques se denominan con una palabra o 2 con guión medio (.menu/.menu-main;.gallery/main-gallery)
+        · Los elementos se nombran con el nombre del bloque al que pertenecen y su nombre con 2 guiones bajos (.menu__item/.menu__link/.menu-main__item/.menu-main__link)*
+        ·Los modificadores se nombran con el nombre del bloque (y elemento) al que pertenecen previo al modificador con 2 guiones medios (.menu__item--active;.gallery__item--special)
+
+        *NO HACER .menu__item__link, sí .menu__link
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="styles.css">
+<!--      <link rel="stylesheet" href="normalize.css"> -->
+ </head>
+ <body>
+     <h1 class="main-title">Metodología BEM</h1>
+     <header class="header">
+         <nav>
+             <ul class="main-menu">
+                 <li class="main-menu__item"><a class="main-menu__link" href="#">Item 1</a></li>
+                 <li class="main-menu__item"><a class="main-menu__linkc main-menu__link--active" href="#">Item 2</a></li>
+                 <li class="main-menu__item"><a class="main-menu__link" href="#">Item 3</a></li>
+                 <li class="main-menu__item"><a class="main-menu__link" href="#">Item 4</a></li>
+             </ul>
+         </nav>
+     </header>
+     <main class="main"></main>
+     <footer class="footer"></footer>
+ </body>
+ </html>

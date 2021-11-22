@@ -1,0 +1,37 @@
+.main-title{
+    text-align: center;
+}
+.header{
+    background: cadetblue;
+    height: 50px;
+}
+.main-menu{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.main-menu__item{
+    line-height: 2.5;
+}
+.main-menu__link{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: green;
+}
+.main-menu__link--active{
+    text-decoration: none;
+    font-size: 1.2em;
+    background: rgba(23, 45, 170, 0.514);
+    color: green;
+}
+.main{
+    background: rgb(15, 116, 141);
+    height: 600px;
+}
+.footer{
+    background: rgb(122, 191, 231);
+    height: 200px;
+}
