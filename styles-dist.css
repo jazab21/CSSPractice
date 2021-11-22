@@ -1,0 +1,77 @@
+/* Selector de etiquetas: */
+    /* p{
+        color: green;
+    }
+    h1{
+        color: red;
+    } */
+/* Selector de clases: */
+    /* .title{
+        color: chartreuse;
+    }
+    .text{
+        color: blue;
+    } */
+/* Selector de id (no recomendables): */
+    /* #title{
+        color: chocolate;
+    }
+    #text{
+        color: cyan;
+    } */
+/* Selector universal (se usa a todos los elementos de la página): */
+    /* *{
+        color: black;
+    } */
+/* Selectores de atributo (selecciona elementos con el atributo): */
+[href]{
+    color: blue;
+}
+/* Selectores de atributo y valor (selecciona elementos con el atributo y valor): */
+[href="#"]{
+    color: red;
+}
+/* Selectores de atributo y valor una vez (selecciona elementos con el atributo y valor al menos una vez): */
+[class~="verde"]{
+    color: green;
+}
+/* Selectores de atributo y solo el valor marcado (selecciona elementos con el atributo y solo el valor marcado): */
+[class|="verde"]{
+    color: greenyellow;
+}
+/* Selectores de atributo y el valor inicial(selecciona elementos con el atributo y el valor inicial): */
+[class^="rojo"]{
+    color: crimson;
+}
+/* Selectores de atributo y el valor final(selecciona elementos con el atributo y el valor final): */
+[class$="rojo"]{
+    color:darkcyan;
+}
+/* Selectores de atributo y contenga el valor(selecciona elementos con el atributo y contenga el valor): */
+[class*="rojo"]{
+    color:darkmagenta;
+}
+/* SELECTORES COMBINADORES */
+
+/* Selector de adyacentes, selecciona al hermano inferior */
+h1+h2{
+    color: red;
+}
+h2+h2{
+    color: blue;
+}
+/* Selector de hermano general, selecciona a todos los hermanos por debajo */
+h1~h3{
+    color: blueviolet;
+}
+h3~h1{
+    color: cadetblue;
+}
+/* Selectores descendentes, todos los hijos seleccionables */
+div span{
+    color:chocolate
+}
+/* Selectores hijo directo, todos los hijos directos seleccionables */
+p>span{
+    color: coral;
+}
